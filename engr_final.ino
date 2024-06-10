@@ -11,7 +11,7 @@ int highScore = 0;
 int modeCounter = 1;
 int count = 0;
 
-int song[12][2] = {
+int song[12][2] = { // song matrix
     {64, 100},  
     {60, 100},  
     {68, 100},  
@@ -180,11 +180,11 @@ void loop() {
           switch(modeCounter)
           {
             case 1: 
-            delayTime = delayTime - 10;
+            delayTime = delayTime - 2;
             break;
             
             case 2: 
-            delayTime = delayTime + 10;
+            delayTime = delayTime + 2;
             break;
 
             case 3:
@@ -201,7 +201,7 @@ void loop() {
             break;
 
             default:
-            delayTime = delayTime - 10;
+            delayTime = delayTime - 2;
             break;
 
           }
